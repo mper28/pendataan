@@ -44,12 +44,17 @@ $data= mysqli_fetch_array($ambil);
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="agama" class="col-sm-3 control-label">No Telepon</label>
+                            <label for="agama" class="col-sm-3 control-label">STO</label>
                             <div class="col-sm-3">
                                 <input type="text" name="no_telp" value="<?=$data['no_telp']?>" class="form-control" id="inputPassword3" placeholder="no_telp">
                             </div>
                         </div>
-                    
+                        <div class="form-group">
+                            <label for="agama" class="col-sm-3 control-label">Datel</label>
+                            <div class="col-sm-3">
+                                <input type="text" name="gender" value="<?=$data['gender']?>" class="form-control" id="inputPassword3" placeholder="gender">
+                            </div>
+                        </div>
                         <div class="form-group">
                             <label class="col-sm-3 control-label">Date</label>
                             <!--untu tahun-->
@@ -118,7 +123,6 @@ if($_POST){
   $thn_masuk=$_POST['thn_masuk'];
     $Jurusan=$_POST['Jurusan'];
   $asal_sekolah=$_POST['asal_sekolah'];
-    $Status=$_POST['Status'];
     
     //buat sql
     $sql="UPDATE datasiswa SET nama='$nama',kelas='$kelas',alamat='$alamat',gender='$gender',agama='$agama',no_telp='$no_telp',thn_masuk='$thn_masuk',Jurusan='$Jurusan',asal_sekolah='$asal_sekolah',Status='$Status'WHERE nis ='$nis'"; 

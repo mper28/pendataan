@@ -19,7 +19,7 @@ if(!isset($_SESSION ['idsesi'])) {
                                 <th width="17%">No Incident</th>,<th>Nama Costumer</th>
                                 <th>Induk Gamas</th>
                                 <th>TTR</th>
-                                <th width="14%">SID</center></th>
+                                <th width="14%">SID</center></th>,
                                 <th width="14%">Date</center></th>
                                 <th width="15%">Penyebab</th>
                                 <th>Foto</th>

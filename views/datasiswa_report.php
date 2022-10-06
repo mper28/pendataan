@@ -17,8 +17,8 @@
                                 <th width="14%">SID</center></th>
                                 <th width="14%">Date</center></th>
                                 <th width="15%">Penyebab</th>
-                                <th>Foto</th><th>AKSI</th>
                                 <th>Solusi</th>
+                                <th>Foto</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -45,9 +45,9 @@
                                     <td><?= $data['alamat'] ?></td>
                                     <td><?= $data['thn_masuk'] ?></td>
 									<td><?= $data['asal_sekolah'] ?></td>
-									<td><?= $data['agama'] ?></td>
+									
                                     <td><?php echo "<img src='foto/".$data['foto']."' width='100px' height='100px'/>"?></td>
-                                                   
+                                    <td><?= $data['agama'] ?></td>
                                     <td>
                                         <a href="report/datasiswa_satu.php?nis=<?= $data['nis'] ?>" target="_blank" class="btn btn-info btn-xs">
                                             <span class="fa fa-print"></span>

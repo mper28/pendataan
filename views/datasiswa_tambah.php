@@ -40,7 +40,18 @@ x`<div class="container">
                                 <input type="text" name="alamat" class="form-control" id="inputEmail3" placeholder="Inputkan SID" required="">
                             </div>
                         </div>
-                      
+                        <div class="form-group">
+                            <label for="alamat" class="col-sm-3 control-label">STO</label>
+                            <div class="col-sm-9">
+                                <input type="text" name="gender" class="form-control" id="inputEmail3" placeholder="Inputkan STO" required="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="alamat" class="col-sm-3 control-label">Datel</label>
+                            <div class="col-sm-9">
+                                <input type="text" name="no_telp" class="form-control" id="inputEmail3" placeholder="Inputkan Datel" required="">
+                            </div>
+                        </div>
 						<div  div class="form-group">
                             <label class="col-sm-3 control-label">Date</label>
                             <div class="col-sm-2 col-xs-9">
@@ -52,7 +63,7 @@ x`<div class="container">
 						<div class="form-group">
                             <label for="asal_sekolah" class="col-sm-3 control-label">Penyebab</label>
                             <div class="col-sm-9">
-                                <input type="text" name="asal_sekolah" class="form-control" id="inputPassword3" placeholder="Inputkan Asal Sekolah">
+                                <input type="text" name="asal_sekolah" class="form-control" id="inputPassword3" placeholder="Inputkan solusi">
                             </div>
                         </div>
                         
@@ -67,10 +78,9 @@ x`<div class="container">
                                <div class="col-sm-2 col-xs-9">
                                <input type="text" name="agama" class="form-control" id="inputEmail3" placeholder="Inputkan SID" required="">
                             </div>
-                        </div>
-                           
+                            </div> 
                         <div class="form-group">
-                            <div class="col-sm-offset-3 col-sm-9">
+                            <div class="col-sm-2 col-xs-9">
                                 <button type="submit" class="btn btn-success">
                                     <span class="fa fa-save"></span> Simpan Data </button>
                             </div>
@@ -117,11 +127,10 @@ if($_POST){
   $thn_masuk=$_POST['thn_masuk'];
     $Jurusan=$_POST['Jurusan'];
     $asal_sekolah=$_POST['asal_sekolah'];
-  $Status=$_POST['Status'];
 
     
     //buat sql
-    $sql="INSERT INTO datasiswa VALUES ('$nis','$nama','$kelas','$alamat','$gender','$agama','$no_telp','$foto','$thn_masuk','$Jurusan','$asal_sekolah','$Status')";
+    $sql="INSERT INTO datasiswa VALUES ('$nis','$nama','$kelas','$alamat','$gender','$agama','$no_telp','$foto','$thn_masuk','$Jurusan','$asal_sekolah')";
     $query=mysqli_query($koneksi, $sql) or die ("SQL Simpan Data Siswa Error");
     if ($query){
         echo "<script>window.location.assign('?page=datasiswa&actions=tampil');</script>";

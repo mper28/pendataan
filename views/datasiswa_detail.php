@@ -31,7 +31,12 @@
                         </tr>
                         <tr>
                             <td>SID</td> <td><?= $data['alamat'] ?></td>
-
+						<tr>
+                        <tr>
+                            <td>STO</td> <td><?= $data['no_telp'] ?></td>
+						<tr>
+                        <tr>
+                            <td>Datel</td> <td><?= $data['gender'] ?></td>
 						<tr>
                             <td>Date</td> <td><?= $data['thn_masuk'] ?></td>
                         </tr>
